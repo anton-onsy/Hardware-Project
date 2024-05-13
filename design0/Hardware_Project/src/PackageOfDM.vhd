@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 
 Package DM_Package is
 	
-	component Registers is 	
+	component DataMemory is 	
 	port(
 		Address : in STD_LOGIC_VECTOR(31 downto 0);
 		WriteData : in STD_LOGIC_VECTOR(31 downto 0); 
