@@ -6,3 +6,4 @@
 .\src\ALU.vhd
 .\src\PackageOFAlu.vhd
 .\src\Registers.vhd
+.\src\PackageOFRegs.vhd

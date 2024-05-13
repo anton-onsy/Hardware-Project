@@ -1,0 +1,524 @@
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0331: Registers.vhd : (54, 36): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/PackageOFRegs.vhd
+# Compile Package "Regisrers_Package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0331: Registers.vhd : (54, 36): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0015: Registers.vhd : (21, 19): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0015: Registers.vhd : (52, 19): '=>' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0078: Registers.vhd : (20, 21): Unknown identifier "REG_type".
+# Error: COMP96_0064: Registers.vhd : (20, 21): Unknown type.
+# Error: COMP96_0078: Registers.vhd : (59, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (59, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (59, 4): Prefix of index must be an array.
+# Error: COMP96_0143: Registers.vhd : (62, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (62, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (62, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (62, 16): Prefix of index must be an array.
+# Error: COMP96_0077: Registers.vhd : (62, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0143: Registers.vhd : (63, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (63, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (63, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (63, 16): Prefix of index must be an array.
+# Error: COMP96_0077: Registers.vhd : (63, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 15 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0078: Registers.vhd : (21, 21): Unknown identifier "REG_type".
+# Error: COMP96_0064: Registers.vhd : (21, 21): Unknown type.
+# Error: COMP96_0078: Registers.vhd : (60, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (60, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (60, 4): Prefix of index must be an array.
+# Error: COMP96_0143: Registers.vhd : (63, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (63, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (63, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (63, 16): Prefix of index must be an array.
+# Error: COMP96_0077: Registers.vhd : (63, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0143: Registers.vhd : (64, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (64, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (64, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (64, 16): Prefix of index must be an array.
+# Error: COMP96_0077: Registers.vhd : (64, 16): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 15 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0367: Registers.vhd : (23, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (24, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (25, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (26, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (27, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (28, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (29, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (30, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (31, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (32, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (33, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (34, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (35, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (36, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (37, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (38, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (39, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (40, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (41, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (42, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (43, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (44, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (45, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (46, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (47, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (48, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (49, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (50, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (51, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (52, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (53, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (54, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0078: Registers.vhd : (61, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (61, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (61, 15): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (61, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (61, 39): Improper array length (32). Expected length is 5.
+# Error: COMP96_0143: Registers.vhd : (64, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (64, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (64, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (64, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (64, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (64, 16): Improper array length (5). Expected length is 32.
+# Error: COMP96_0143: Registers.vhd : (65, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (65, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (65, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (65, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (65, 16): Improper array length (5). Expected length is 32.
+# Compile failure 49 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0367: Registers.vhd : (23, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (24, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (25, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (26, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (27, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (28, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (29, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (30, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (31, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (32, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (33, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (34, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (35, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (36, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (37, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (38, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (39, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (40, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (41, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (42, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (43, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (44, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (45, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (46, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (47, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (48, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (49, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (50, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (51, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (52, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (53, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (54, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0078: Registers.vhd : (61, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (61, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (61, 15): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (61, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (61, 39): Improper array length (32). Expected length is 5.
+# Error: COMP96_0143: Registers.vhd : (64, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (64, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (64, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (64, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (64, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (64, 16): Improper array length (5). Expected length is 32.
+# Error: COMP96_0143: Registers.vhd : (65, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (65, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (65, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (65, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (65, 16): Improper array length (5). Expected length is 32.
+# Compile failure 49 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0367: Registers.vhd : (24, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (25, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (26, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (27, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (28, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (29, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (30, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (31, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (32, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (33, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (34, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (35, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (36, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (37, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (38, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (39, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (40, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (41, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (42, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (43, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (44, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (45, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (46, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (47, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (48, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (49, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (50, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (51, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (52, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (53, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (54, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (55, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0078: Registers.vhd : (62, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (62, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (62, 15): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (62, 39): Improper array length (32). Expected length is 5.
+# Error: COMP96_0143: Registers.vhd : (65, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (65, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (65, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (65, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (65, 16): Improper array length (5). Expected length is 32.
+# Error: COMP96_0143: Registers.vhd : (66, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (66, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (66, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (66, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (66, 16): Improper array length (5). Expected length is 32.
+# Compile failure 49 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0367: Registers.vhd : (24, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (25, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (26, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (27, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (28, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (29, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (30, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (31, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (32, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (33, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (34, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (35, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (36, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (37, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (38, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (39, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (40, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (41, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (42, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (43, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (44, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (45, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (46, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (47, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (48, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (49, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (50, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (51, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (52, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (53, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (54, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (55, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0078: Registers.vhd : (62, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (62, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (62, 15): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (62, 39): Improper array length (32). Expected length is 5.
+# Error: COMP96_0143: Registers.vhd : (65, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (65, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (65, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (65, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (65, 16): Improper array length (5). Expected length is 32.
+# Error: COMP96_0143: Registers.vhd : (66, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (66, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (66, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (66, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (66, 16): Improper array length (5). Expected length is 32.
+# Compile failure 49 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0015: Registers.vhd : (24, 10): ')' expected.
+# Error: COMP96_0015: Registers.vhd : (24, 20): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0367: Registers.vhd : (24, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (25, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (26, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (27, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (28, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (29, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (30, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (31, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (32, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (33, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (34, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (35, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (36, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (37, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (38, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (39, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (40, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (41, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (42, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (43, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (44, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (45, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (46, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (47, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (48, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (49, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (50, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (51, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (52, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (53, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (54, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0367: Registers.vhd : (55, 8): Improper array length (32). Expected length is 5.
+# Error: COMP96_0078: Registers.vhd : (62, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (62, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (62, 15): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (62, 39): Improper array length (32). Expected length is 5.
+# Error: COMP96_0143: Registers.vhd : (65, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (65, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (65, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (65, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (65, 16): Improper array length (5). Expected length is 32.
+# Error: COMP96_0143: Registers.vhd : (66, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (66, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (66, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (66, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: Registers.vhd : (66, 16): Improper array length (5). Expected length is 32.
+# Compile failure 49 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0078: Registers.vhd : (62, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (62, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (62, 15): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0143: Registers.vhd : (65, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (65, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (65, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (65, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0143: Registers.vhd : (66, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (66, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (66, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (66, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0078: Registers.vhd : (62, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (62, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (62, 15): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0143: Registers.vhd : (65, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (65, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (65, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (65, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0143: Registers.vhd : (66, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (66, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (66, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (66, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0078: Registers.vhd : (62, 15): Unknown identifier "conv_tointeger".
+# Error: COMP96_0133: Registers.vhd : (62, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (62, 15): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0143: Registers.vhd : (65, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (65, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (65, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (65, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0143: Registers.vhd : (66, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (66, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (66, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (66, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0143: Registers.vhd : (65, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (65, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (65, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (65, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0143: Registers.vhd : (66, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0078: Registers.vhd : (66, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (66, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (66, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0143: Registers.vhd : (65, 3): Object "Read_data1" cannot be written.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0143: Registers.vhd : (66, 3): Object "Read_data2" cannot be written.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0078: Registers.vhd : (62, 15): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (62, 15): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (62, 15): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: Registers.vhd : (65, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (65, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (65, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: Registers.vhd : (66, 27): Unknown identifier "to_integer".
+# Error: COMP96_0133: Registers.vhd : (66, 27): Cannot find object declaration.
+# Error: COMP96_0289: Registers.vhd : (66, 27): Prefix of index must be an array.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0419: Registers.vhd : (62, 26): Ambiguous reference to "unsigned". Visible declarations include 'ieee.NUMERIC_STD.unsigned' and 'ieee.std_logic_arith.unsigned'.
+# Error: COMP96_0272: Registers.vhd : (62, 26): Ambiguous reference to type "UNSIGNED".
+# Error: COMP96_0305: Registers.vhd : (62, 15): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0305: Registers.vhd : (65, 27): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0305: Registers.vhd : (66, 27): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0419: Registers.vhd : (62, 26): Ambiguous reference to "unsigned". Visible declarations include 'ieee.NUMERIC_STD.unsigned' and 'ieee.std_logic_arith.unsigned'.
+# Error: COMP96_0272: Registers.vhd : (62, 26): Ambiguous reference to type "UNSIGNED".
+# Error: COMP96_0305: Registers.vhd : (62, 15): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0305: Registers.vhd : (65, 27): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0305: Registers.vhd : (66, 27): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0419: Registers.vhd : (62, 26): Ambiguous reference to "unsigned". Visible declarations include 'ieee.NUMERIC_STD.unsigned' and 'ieee.std_logic_arith.unsigned'.
+# Error: COMP96_0272: Registers.vhd : (62, 26): Ambiguous reference to type "UNSIGNED".
+# Error: COMP96_0305: Registers.vhd : (62, 15): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (62, 15): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0305: Registers.vhd : (65, 27): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0305: Registers.vhd : (66, 27): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0305: Registers.vhd : (65, 27): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (65, 27): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0305: Registers.vhd : (66, 27): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0015: Registers.vhd : (65, 58): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Error: COMP96_0305: Registers.vhd : (66, 27): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0138: Registers.vhd : (66, 27): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Hardware_Project -2002  $dsn/src/Registers.vhd
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -reorder -O3 -e 100 -work Hardware_Project -2002  $dsn/src/MIPsProcessor.vhd $dsn/src/mux2to1.vhd $dsn/src/PackageOFMux.vhd $dsn/src/SignExtender.vhd $dsn/src/PackageOFSE.vhd $dsn/src/ALU.vhd $dsn/src/PackageOFAlu.vhd $dsn/src/Registers.vhd $dsn/src/PackageOFRegs.vhd
+# Compile Entity "MIPsProcessor"
+# Compile Architecture "MIPsProcessor" of Entity "MIPsProcessor"
+# Compile Entity "mux2to1"
+# Compile Architecture "Fun_mux" of Entity "mux2to1"
+# Compile Package "mux2to1_Package"
+# Compile Entity "SignExtender"
+# Compile Architecture "Fun_SE" of Entity "SignExtender"
+# Compile Package "SE_Package"
+# Compile Entity "ALU"
+# Compile Architecture "Fun_ALU" of Entity "ALU"
+# Compile Package "ALU_Package"
+# Compile Entity "Registers"
+# Compile Architecture "Registers" of Entity "Registers"
+# Compile Package "Regisrers_Package"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => mux2to1
+# Entity => SignExtender
+# Entity => Registers
+# Entity => ALU
+# Compile Architecture "MIPsProcessor" of Entity "MIPsProcessor"
+# Error: COMP96_0034: MIPsProcessor.vhd : (21, 4): Expression or keyword expected.
+# Error: COMP96_0034: MIPsProcessor.vhd : (28, 1): Expression or keyword expected.
+# Error: COMP96_0034: MIPsProcessor.vhd : (32, 1): Expression or keyword expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Hardware_Proj

@@ -26,10 +26,21 @@ begin
 --		Alu_control => ,
 --		Alu_out => 
 );
- u2:SE port map(   
+ u3:SE port map(   
 	     -- input_SE =>,
 --	      output_SE =>
-);  	  
+);
+u4:Registers port map(
+ RegWrite : in STD_LOGIC;
+		--Read_reg1 => ,
+--		Read_reg2 => ,
+--		Write_reg => ,
+--		WriteData => ,
+--		Read_data1 =>,
+--		Read_data2
+
+);
+
 
 
 end MIPsProcessor;

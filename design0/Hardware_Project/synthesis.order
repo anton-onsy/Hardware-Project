@@ -6,3 +6,4 @@ i<>.\src\PackageOFSE.vhd
 i<>.\src\ALU.vhd
 i<>.\src\PackageOFAlu.vhd
 i<>.\src\Registers.vhd
+i<>.\src\PackageOFRegs.vhd
