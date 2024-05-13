@@ -67,6 +67,8 @@ extension11=asdb;awc;asdbc;asdbe
 /PackageOFAlu.vhd=-1
 /Registers.vhd=-1
 /PackageOFRegs.vhd=-1
+/DataMemory.vhd=-1
+/Instruction Memory.vhd=-1
 [Files.Data]
 .\src\MIPsProcessor.vhd=VHDL Source Code
 .\src\mux2to1.vhd=VHDL Source Code
@@ -77,6 +79,8 @@ extension11=asdb;awc;asdbc;asdbe
 .\src\PackageOFAlu.vhd=VHDL Source Code
 .\src\Registers.vhd=VHDL Source Code
 .\src\PackageOFRegs.vhd=VHDL Source Code
+.\src\DataMemory.vhd=VHDL Source Code
+.\src\Instruction Memory.vhd=VHDL Source Code
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
