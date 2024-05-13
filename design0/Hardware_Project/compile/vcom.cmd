@@ -1,0 +1,1 @@
+-w -d c:/My_Designs/design0/Hardware_Project/compile -s c:/My_Designs/design0/library.cfg -j c:/My_Designs/design0/Hardware_Project/projlib.cfg -work Hardware_Project -O3 -e 100 -work Hardware_Project -2002 c:/My_Designs/design0/Hardware_Project/src/MIPsProcessor.vhd 

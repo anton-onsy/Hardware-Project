@@ -1,0 +1,13 @@
+[Version]
+Version=15.0
+[Designs]
+hardware_project=.\Hardware_Project\Hardware_Project.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+[Expand]
+hardware_project=1
+[Settings]
+Active=hardware_project
