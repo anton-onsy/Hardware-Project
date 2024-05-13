@@ -1,9 +1,0 @@
-.\src\MIPsProcessor.vhd
-.\src\mux2to1.vhd
-.\src\PackageOFMux.vhd
-.\src\SignExtender.vhd
-.\src\PackageOFSE.vhd
-.\src\ALU.vhd
-.\src\PackageOFAlu.vhd
-.\src\Registers.vhd
-.\src\PackageOFRegs.vhd
