@@ -1,13 +1,13 @@
-timestamp=1715617397466
+timestamp=1715620137961
 
 [~A]
-ModifyID=28
+ModifyID=37
 Version=74
 
 [~MFT]
-0=8|0Hardware_Project.mgf|28304|15434
-1=8|1Hardware_Project.mgf|30397|24462
-3=8|3Hardware_Project.mgf|7970|6309
+0=8|0Hardware_Project.mgf|37550|19544
+1=2|1Hardware_Project.mgf|40292|26414
+3=2|3Hardware_Project.mgf|9625|6748
 
 [alu]
 A/fun_alu=A/Fun_ALU 21|../src/ALU.vhd|20|1*29018
@@ -26,6 +26,28 @@ I=0*14101
 M=3|2|vf5|1715557159521|../src/PackageOFAlu.vhd|0*13607*0xb59f64ccef9a43feece98222982c351daa6d4d3f|0*14013*0x23b75c12e3e89f2ef000564498faa8c2
 R=../src/PackageOFAlu.vhd|4
 Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|6f5561e8534f5022f17f9a20dc5681a134cc7dd7fedef3f9e46e77bd8e6d0c22272b582aa96993670c9fb0397fb25cb9
+
+[datamemory]
+A/datamemory=A/DataMemory 21|../src/DataMemory.vhd|17|1*38397
+BinW64/datamemory=3*9072
+I=0*34241
+I/datamemory=I/DataMemory 0*35870
+M=11|2|vf5|1715620078191|../src/DataMemory.vhd|0*33779*0x1c3bcf48cf44502054dd8d8ac8c8b826f3da6dab|0*34156*0x23b75c12e3e89f2ef000564498faa8c2
+M/datamemory=M/DataMemory 21|2|vf5|1715620119614|../src/DataMemory.vhd|0*34483*0xc96d9f3280d4ad06a89e83c6347a81e0018209c0|0*35771*0x20116f55b147878295aeff36dce7fc50
+R=../src/DataMemory.vhd|5
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|7793825785d20404bb17597473d95352b167e0450850ccddc54c84a0938915f775207d45380603749fef969405f6fa41
+Version/datamemory=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|7793825785d20404bb17597473d95352b167e0450850ccddc54c84a0938915f7d643c3826c6e46a94e470ca72fd6bb32
+
+[instructionmemory]
+A/instructionmemory=A/InstructionMemory 21|../src/Instruction Memory.vhd|12|1*40292
+BinW64/instructionmemory=3*9625
+I=0*31611
+I/instructionmemory=I/InstructionMemory 0*37550
+M=11|2|vf5|1715618802866|../src/Instruction Memory.vhd|0*31190*0x305adad699ba4d4b4efdf34c4d175978743a3be5|0*31511*0x23b75c12e3e89f2ef000564498faa8c2
+M/instructionmemory=M/InstructionMemory 21|2|vf5|1715620137953|../src/Instruction Memory.vhd|0*36123*0xe8446ed0a51704482ae42a52c9b9758bc760d854|0*37429*0x20116f55b147878295aeff36dce7fc50
+R=../src/Instruction Memory.vhd|5
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|d1182ed61ea73a0e641d9f9e1227a7c4d3caa2c06897ecf2be9fc860412dcc1386ec15489348f9fed6e90b8fd7a92eec
+Version/instructionmemory=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|d1182ed61ea73a0e641d9f9e1227a7c4d3caa2c06897ecf2be9fc860412dcc134414e0bde0536ddfa84d415a5440380c
 
 [mipsprocessor]
 A/mipsprocessor=+21|../src/MIPsProcessor.vhd|9|1*6112
@@ -62,15 +84,15 @@ R=../src/PackageOFRegs.vhd|4
 Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|0b03c58251b7ceab78a9fd5f599bbfd68851ef5ab2cfaee669aafe07945aac2c33ef7b1e4840fedd29c123e18e3815c5
 
 [registers]
-A/registers=A/Registers 21|../src/Registers.vhd|21|1*30397
+A/registers=A/Registers 21|../src/Registers.vhd|21|1*33436
 BinW64/registers=3*7970
 I=0*22818
-I/registers=I/Registers 0*28304
+I/registers=I/Registers 0*30074
 M=11|2|vf5|1715617162751|../src/Registers.vhd|0*22259*0xd6d1e85c70d2615e9fd8e128aca9331796008b12|0*22735*0x23b75c12e3e89f2ef000564498faa8c2
-M/registers=M/Registers 21|2|vf5|1715617397458|../src/Registers.vhd|0*23059*0x39e8a080dcfc81657b11fe4c25d019af404ae9af|0*25209*0x20116f55b147878295aeff36dce7fc50
+M/registers=M/Registers 21|2|vf5|1715618370908|../src/Registers.vhd|0*23059*0x39e8a080dcfc81657b11fe4c25d019af404ae9af|0*25209*0x20116f55b147878295aeff36dce7fc50
 R=../src/Registers.vhd|7
 Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|2314fdb2a4dd7301b5d97b47fbce135ee711739d3258eb7291525b46820d6d99604a143436e1dfda5e80a5470ee7411f
-Version/registers=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|2314fdb2a4dd7301b5d97b47fbce135ee711739d3258eb7291525b46820d6d9951041c600c3aa2625cc171c5ec74b43f
+Version/registers=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|2314fdb2a4dd7301b5d97b47fbce135ee711739d3258eb7291525b46820d6d997bbd25ceae4c1f995d703d1efe9615a8
 
 [se_package]
 E=1*8966
@@ -93,6 +115,8 @@ Version/fun_se=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|69fd77d6
 [~U]
 alu=ALU 11|0*9455|
 alu_package=ALU_Package 3|0*13326|0*13454
+datamemory=DataMemory 11|0*33554|
+instructionmemory=InstructionMemory 11|0*30971|
 mipsprocessor=MIPsProcessor 11|0*14304|
 mux2to1=11|0*5955|
 mux2to1_package=mux2to1_Package 3|0*4732|0*4868

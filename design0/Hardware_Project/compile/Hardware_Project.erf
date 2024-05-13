@@ -1,7 +1,0 @@
-ERROR COMP96_0034: "Expression or keyword expected." "C:/My_Designs/design0/Hardware_Project/src/MIPsProcessor.vhd" 21 4
-ERROR COMP96_0034: "Expression or keyword expected." "C:/My_Designs/design0/Hardware_Project/src/MIPsProcessor.vhd" 28 1
-ERROR COMP96_0034: "Expression or keyword expected." "C:/My_Designs/design0/Hardware_Project/src/MIPsProcessor.vhd" 32 1
-ERROR COMP96_0724: "',' or ')' expected." "C:/My_Designs/design0/Hardware_Project/src/MIPsProcessor.vhd" 34 11
-ERROR COMP96_0015: "';' expected." "C:/My_Designs/design0/Hardware_Project/src/MIPsProcessor.vhd" 34 13
-ERROR COMP96_0019: "Keyword 'end' expected." "C:/My_Designs/design0/Hardware_Project/src/MIPsProcessor.vhd" 42 1
-ERROR COMP96_0016: "Design unit declaration expected." "C:/My_Designs/design0/Hardware_Project/src/MIPsProcessor.vhd" 42 2

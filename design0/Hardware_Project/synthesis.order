@@ -7,3 +7,5 @@ i<>.\src\ALU.vhd
 i<>.\src\PackageOFAlu.vhd
 i<>.\src\Registers.vhd
 i<>.\src\PackageOFRegs.vhd
+i<>.\src\Instruction Memory.vhd
+i<>.\src\DataMemory.vhd

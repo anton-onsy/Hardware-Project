@@ -7,3 +7,5 @@
 .\src\PackageOFAlu.vhd
 .\src\Registers.vhd
 .\src\PackageOFRegs.vhd
+.\src\Instruction Memory.vhd
+.\src\DataMemory.vhd
