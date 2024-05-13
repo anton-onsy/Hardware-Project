@@ -3,6 +3,8 @@ use ieee.std_logic_1164.all;
 use work.mux2to1_Package.all;
 use work.ALU_Package.all;
 use work.SE_Package.all;
+use work.IM_Package.all;
+use work.DM_Package.all;
 
 entity MIPsProcessor is
 end MIPsProcessor;
