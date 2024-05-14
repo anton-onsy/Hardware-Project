@@ -10,8 +10,8 @@ Package Regisrers_Package is
 		Read_reg2 : in STD_LOGIC_VECTOR(4 downto 0);
 		Write_reg : in STD_LOGIC_VECTOR(4 downto 0);
 		WriteData : in STD_LOGIC_VECTOR(31 downto 0);
-		Read_data1 : in STD_LOGIC_VECTOR(31 downto 0);
-		Read_data2 : in STD_LOGIC_VECTOR(31 downto 0)
+		Read_data1 : out STD_LOGIC_VECTOR(31 downto 0);
+		Read_data2 : out STD_LOGIC_VECTOR(31 downto 0)
 	);
 	end component;
 	

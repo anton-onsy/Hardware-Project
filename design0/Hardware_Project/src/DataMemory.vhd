@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity DataMemory is
-	port(
+	port( 
 		Address : in STD_LOGIC_VECTOR(31 downto 0);
 		WriteData : in STD_LOGIC_VECTOR(31 downto 0); 
 		MemRead : in STD_LOGIC;
