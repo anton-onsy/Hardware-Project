@@ -3,7 +3,7 @@
 .\src\InstructionMemory.vhd
 .\src\MIPSProcessor.vhd
 .\src\PackageOF32BitMux2to1.vhd
-.\src\PackageOFAdder.vhd
+.\src\PackageOFWordAdder.vhd
 .\src\PackageOFAlu.vhd
 .\src\PackageOFALUAdd.vhd
 .\src\PackageOfAluControl.vhd
@@ -18,8 +18,9 @@
 .\src\Registers.vhd
 .\src\SignExtender.vhd
 .\src\ThirtyTwoBitMUX2to1.vhd
-.\src\Adder.vhd
+.\src\WordAdder.vhd
 .\src\ALU.vhd
 .\src\ALU_Adder.vhd
 .\src\ALU_Control.vhd
 .\src\Controller.vhd
+.\src\ShiftLeftTwo.vhd
