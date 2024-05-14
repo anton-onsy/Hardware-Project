@@ -6,6 +6,7 @@ use IEEE.numeric_std.all;
 
 entity Registers is
 	port(
+		clk : in STD_LOGIC;
 		RegWrite : in STD_LOGIC;--coming from control unit
 		Read_reg1 : in STD_LOGIC_VECTOR(4 downto 0);
 		Read_reg2 : in STD_LOGIC_VECTOR(4 downto 0);
@@ -56,13 +57,19 @@ signal ArrayOfReg : REG_type :=(
 
                                    );
 begin
-	process(RegWrite)
+	process(clk)
 	begin 
-  if (RegWrite ='1') then 
-	  ArrayOfReg(to_integer(unsigned(Write_reg))) <= WriteData;
-  end if;
-  end process;
-  Read_data1<= ArrayOfReg(to_integer(unsigned(Read_reg1)));
-  Read_data2<= ArrayOfReg(to_integer(unsigned(Read_reg2)));
+  	if (rising_edge(clk)) then 
+	 	if(RegWrite = '1') then
+		 	ArrayOfReg(to_integer(unsigned(Write_reg))) <= WriteData;
+	 	end if;
+  	end if;
+  	end process;
+	
+	process(Read_reg1,Read_reg2)
+	begin
+		Read_data1<= ArrayOfReg(to_integer(unsigned(Read_reg1)));
+  		Read_data2<= ArrayOfReg(to_integer(unsigned(Read_reg2)));
+	end process;
 
 end Registers;

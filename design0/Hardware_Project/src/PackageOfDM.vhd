@@ -4,7 +4,8 @@ use IEEE.std_logic_1164.all;
 Package DM_Package is
 	
 	component DataMemory is 	
-	port(
+	port(	
+		clk : in std_logic;
 		Address : in STD_LOGIC_VECTOR(31 downto 0);
 		WriteData : in STD_LOGIC_VECTOR(31 downto 0); 
 		MemRead : in STD_LOGIC;

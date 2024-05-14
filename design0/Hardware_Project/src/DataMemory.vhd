@@ -4,6 +4,7 @@ use IEEE.numeric_std.all;
 
 entity DataMemory is
 	port( 
+		clk : in STD_LOGIC; -- Added clk signal
 		Address : in STD_LOGIC_VECTOR(31 downto 0);
 		WriteData : in STD_LOGIC_VECTOR(31 downto 0); 
 		MemRead : in STD_LOGIC;
@@ -11,8 +12,6 @@ entity DataMemory is
 		ReadData : out STD_LOGIC_VECTOR(31 downto 0)
 	);
 end DataMemory;
-
---}} End of automatically maintained section
 
 architecture DataMemory of DataMemory is   
 
@@ -37,15 +36,16 @@ architecture DataMemory of DataMemory is
 	
 								);
 begin
-	process(MemRead,MemWrite)
+	process(clk) -- Modified to be synchronous with the clk
 	begin
-		if(MemWrite = '1') then
-			DM( (to_integer(unsigned(Address))-268500592) /4 ) <= WriteData;
-		end if;
-		
-		
-		if(MemRead = '1') then
-			ReadData <= DM( (to_integer(unsigned(Address))-268500592) /4 );
+		if rising_edge(clk) then -- Added clk edge detection
+			if(MemWrite = '1') then
+				DM( (to_integer(unsigned(Address))-268500592) /4 ) <= WriteData;
+			end if;
+			
+			if(MemRead = '1') then
+				ReadData <= DM( (to_integer(unsigned(Address))-268500592) /4 );
+			end if;
 		end if;	 
 	end process;
 

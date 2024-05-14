@@ -14,16 +14,16 @@ use work.Adder_Package.all;
 use work.ALU_Add_Package.all;  
 
 
-entity MIPsProcessor is	
+entity MIPSProcessor is	
 	port(
-	clk:in std_logic;
-	reset: in std_logic
+	    clk:in std_logic;
+	    reset: in std_logic
 	);
-end MIPsProcessor;
+end MIPSProcessor;
 
 
 
-architecture MIPsProcessor of MIPsProcessor is	  
+architecture MIPSProcessor of MIPSProcessor is	  
 
    	-- MIPSIntructionMemory signals
     signal Instruction: std_logic_vector(31 downto 0);
@@ -128,6 +128,7 @@ MIPSSignExtend: SignExtender port map (
 	
 
 MIPSREGS: Registers port map (
+        clk,										--clk
 		RegWrite,							        --RegWrite 
 		Instruction(25 downto 21),					--Read_reg1 
 		Instruction(20 downto 16),					--Read_reg2 
@@ -167,6 +168,7 @@ MIPSALU: ALU port map (
     ); 	
 	
 MIPSDataMemory: DataMemory port map (
+    clk,							        --clk
 	AluResult,					        --Address 
 	Read_data2,							--WriteData  
 	MemRead,							--MemRead 
@@ -207,4 +209,4 @@ MIPSMUX_ALUADD_PC:  ThirtyTwoBitMUX2to1 port map (
 
 
 
-end MIPsProcessor;
+end MIPSProcessor;

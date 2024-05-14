@@ -1,7 +1,7 @@
 .\src\DataMemory.vhd
 .\src\fiveBitMux2to1.vhd
 .\src\InstructionMemory.vhd
-.\src\MIPsProcessor.vhd
+.\src\MIPSProcessor.vhd
 .\src\PackageOF32BitMux2to1.vhd
 .\src\PackageOFAdder.vhd
 .\src\PackageOFAlu.vhd

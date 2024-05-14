@@ -15,10 +15,10 @@ end PC;
 
 architecture PC of PC is
 begin	 
-	process(clk,reset,Address_in) 
+	process(clk,reset) 
 	begin
-	if(clk='1' and clk'event) then
-		if (reset='1') then
+	if(rising_edge(clk)) then
+		if (reset='0') then
         Address_out<=Address_in;
 	else
 		Address_out<=x"00000000";
