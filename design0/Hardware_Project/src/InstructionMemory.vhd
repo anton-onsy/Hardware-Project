@@ -33,6 +33,6 @@ architecture InstructionMemory of InstructionMemory is
 begin 
 	--NOTE: 4194304 = 0x0040 0000
 	Instruction <= x"00000000" when ReadAddress = x"003FFFFC" else
-		IM( (to_integer(unsigned(ReadAddress))-4194304)/4 );
+		IM( to_integer(unsigned(ReadAddress)-4194304)/4 );
 
 end InstructionMemory;

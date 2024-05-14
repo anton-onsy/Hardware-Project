@@ -1,7 +1,7 @@
 LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_1164.ALL;   
+USE work.MAIN_ALU_Package.ALL;
 USE work.fiveBitMux2to1_Package.ALL;
-USE work.ALU_Package.ALL;
 USE work.ALU_Control_Package.ALL;
 USE work.SE_Package.ALL;
 USE work.IM_Package.ALL;
@@ -11,7 +11,9 @@ USE work.Regisrers_Package.ALL;
 USE work.ThirtyTwoBitMUX2to1_Package.ALL;
 USE work.PC_Package.ALL;
 USE work.WordAdder_Package.ALL;
-USE work.ALU_Add_Package.ALL;
+USE work.ALU_Add_Package.ALL;	  
+
+
 ENTITY MIPSProcessor IS
     PORT (
         clk : IN STD_LOGIC;

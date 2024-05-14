@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-Package ALU_Package is
+Package MAIN_ALU_Package is
 	 constant n: integer :=32;
 	component ALU is 	
 	port(				   
@@ -13,4 +13,4 @@ Package ALU_Package is
 	); 
 	end component;
 	
-end  ALU_Package;
+end package;
