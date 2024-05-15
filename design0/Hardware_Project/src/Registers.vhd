@@ -30,9 +30,9 @@ signal ArrayOfReg : REG_type :=(
 							x"55555555", --$a1
 							x"66666666", --$a2
 							x"77777777", --$a3
-							x"88888888", --$t0
-							x"99999999", --$t1
-							x"aaaaaaaa", --$t2
+							x"0000000A", --$t0
+							x"00000005", --$t1
+							x"00000000", --$t2
 							x"bbbbbbbb", --$t3
 							x"cccccccc", --$t4
 							x"dddddddd", --$t5
@@ -63,13 +63,11 @@ begin
 	 	if(RegWrite = '1') then
 		 	ArrayOfReg(to_integer(unsigned(Write_reg))) <= WriteData;
 	 	end if;
+		 Read_data1<= ArrayOfReg(to_integer(unsigned(Read_reg1)));
+		 Read_data2<= ArrayOfReg(to_integer(unsigned(Read_reg2)));
   	end if;
   	end process;
 	
-	process(Read_reg1,Read_reg2)
-	begin
-		Read_data1<= ArrayOfReg(to_integer(unsigned(Read_reg1)));
-  		Read_data2<= ArrayOfReg(to_integer(unsigned(Read_reg2)));
-	end process;
+	
 
 end Registers;

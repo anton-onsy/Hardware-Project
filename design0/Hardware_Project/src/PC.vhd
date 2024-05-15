@@ -18,10 +18,11 @@ begin
 	process(clk,reset) 
 	begin
 	if(rising_edge(clk)) then
-		if (reset='0') then
-        Address_out<=Address_in;
+		if (reset='1') then
+		Address_out<= x"00400000";
 	else
-		Address_out<=x"00000000";
+        Address_out <= Address_in;
+		
 	end if;
 	end if;
 	end process;

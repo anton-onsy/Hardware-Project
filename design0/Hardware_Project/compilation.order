@@ -24,3 +24,4 @@
 .\src\SignExtender.vhd
 .\src\ThirtyTwoBitMUX2to1.vhd
 .\src\WordAdder.vhd
+.\src\MIPS_tb.vhd
