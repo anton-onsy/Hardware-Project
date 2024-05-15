@@ -27,8 +27,8 @@ use IEEE.std_logic_unsigned.all;
 		case Alu_control is
 			when "0000" =>	Alu_IntSig <= Alu_in1 + Alu_in2; --addition 
 			when "0001" =>	Alu_IntSig <= Alu_in1 - Alu_in2; --subtraction
-			when "0010" =>	Alu_IntSig <= Alu_in1 and Alu_in2; --and
-			when "0011" =>	Alu_IntSig <= Alu_in1 or Alu_in2; --or
+			when "0011" =>	Alu_IntSig <= Alu_in1 and Alu_in2; --and
+			when "0010" =>	Alu_IntSig <= Alu_in1 or Alu_in2; --or
 			when "0100" =>	Alu_IntSig <= Alu_in1 nor Alu_in2; --nor
 			when others =>	Alu_IntSig <=x"00000000";
 			--we can add more additional operations................
