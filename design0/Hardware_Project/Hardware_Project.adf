@@ -88,7 +88,7 @@ extension11=asdb;awc;asdbc;asdbe
 .\..\..\..\..\..\..\Semester2\HardwareDesign\Project\Hardware-Project\design0\Hardware_Project\src\MIPS_MAIN_SIM.awc=Accelerated Waveform Configuration
 .\src\MIPS_tb.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=mipsprocessor|mipsprocessor|0 pc|pc|0
+HierarchyInformation=mipsprocessor|mipsprocessor|0 mipsprocessor_tb|behavior|0
 ShowHide=ShowTopLevel
 Selected=
 [Files]

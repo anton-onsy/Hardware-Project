@@ -9,27 +9,27 @@ entity InstructionMemory is
     );
 end InstructionMemory;
 
-architecture InstructionMemory of InstructionMemory is
+architecture Behavioral of InstructionMemory is
 
-    type RAM_16_x_32 is array(0 to 15) of std_logic_vector(31 downto 0);    
+    type RAM_16_x_32 is array(0 to 15) of std_logic_vector(31 downto 0);
 
     signal IM: RAM_16_x_32 := (
-        x"01285024", -- 0x0040 0000: and $t2, $t1, $t0
-        x"018b6825", -- 0x0040 0004: or $t5, $t4, $t3
-        x"01285020", -- Additional instructions...
-        x"01285022",
-        x"0149402a",
-        x"1211fffb",
-        x"01285024",
-        x"018b6825",
-        x"01285020",
-        x"01285022",
-        x"0149402a",
-        x"00000000",
-        x"00000000",
-        x"00000000",
-        x"00000000",
-        x"00000000"
+        x"01285020", -- add $t2, $t1, $t0
+        x"01285022", -- sub $t2, $t1, $t0
+        x"01285024", -- and $t2, $t1, $t0
+        x"018b6825", -- or $t5, $t4, $t3
+        x"1211fffb", -- beq $t1, $t0, -5
+        x"0149402a", -- slt $t2, $t1, $t0
+        x"2109000A", -- addi $t1, $t0, 10 (initialization)
+        x"012a4820", -- add $t1, $t1, $t2 (perform addition)
+        x"012a4822", -- sub $t1, $t1, $t2 (perform subtraction)
+        x"012a4824", -- and $t1, $t1, $t2 (perform AND)
+        x"012a4825", -- or $t1, $t1, $t2 (perform OR)
+        x"0149502a", -- slt $t2, $t2, $t1 (perform set less than)
+        x"1009fffb", -- beq $zero, $t1, -5 (loop if $t1 == 0)
+        x"ac090004", -- sw $t1, 4($zero) (store word)
+        x"8c090004", -- lw $t1, 4($zero) (load word)
+        x"08000000"  -- j 0x000000 (jump to address 0)
     );
 
 begin 
@@ -37,16 +37,13 @@ begin
         variable index: integer;
     begin
         -- Assuming ReadAddress starts from 0x00400000 and increments by 4
-        if unsigned(ReadAddress) >= 4194304 then
-            index := (to_integer(unsigned(ReadAddress) - 4194304) / 4);
-            if index >= 0 and index < IM'length then
-                Instruction <= IM(index);
-            else
-                Instruction <= (others => '0'); -- Return 0 if address is out of range
-            end if;
+        index := to_integer(unsigned(ReadAddress(31 downto 2))) - (4194304 / 4);
+
+        if index >= 0 and index < IM'length then
+            Instruction <= IM(index);
         else
-            Instruction <= (others => '0'); -- Return 0 for addresses below 0x00400000
+            Instruction <= (others => '0'); -- Return 0 if address is out of range
         end if;
     end process;
 
-end InstructionMemory;
+end Behavioral;
