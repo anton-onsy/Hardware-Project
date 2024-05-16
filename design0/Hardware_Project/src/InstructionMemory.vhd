@@ -20,7 +20,7 @@ architecture Behavioral of InstructionMemory is
         x"018b6825", -- or $t5, $t4, $t3
         x"8c090004", -- lw $t1, 4($zero) (load word)
         x"ac090004", -- sw $t1, 4($zero) (store word)
-        x"08000000",  -- j 0x000000 (jump to address 0)
+        x"08100000",  -- j 0x000000 (jump to address 0)
         x"018b6825", -- or $t5, $t4, $t3
         --x"1211fffb", -- beq $t1, $t0, -5
         x"0149402a", -- slt $t2, $t1, $t0
