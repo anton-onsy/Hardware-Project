@@ -14,8 +14,8 @@ FileTimeLow=642210139
 FileTimeHigh=31106379
 Status=Error
 [COMPILESTATUS|.\src\MIPSProcessor.vhd]
-FileTimeLow=700326684
-FileTimeHigh=31106834
+FileTimeLow=4178419885
+FileTimeHigh=31107023
 Status=Compiled
 [COMPILESTATUS|.\src\SignExtender.vhd]
 FileTimeLow=642210139
@@ -66,12 +66,12 @@ FileTimeLow=54082037
 FileTimeHigh=31106598
 Status=Compiled
 [COMPILESTATUS|.\src\DataMemory.vhd]
-FileTimeLow=3763222989
-FileTimeHigh=31106596
+FileTimeLow=612360197
+FileTimeHigh=31107023
 Status=Compiled
 [COMPILESTATUS|.\src\InstructionMemory.vhd]
-FileTimeLow=254258756
-FileTimeHigh=31107018
+FileTimeLow=2852307272
+FileTimeHigh=31107022
 Status=Compiled
 [COMPILESTATUS|.\src\ALU_Control.vhd]
 FileTimeLow=2329041050

@@ -1,5 +1,5 @@
 LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;   
+USE ieee.std_logic_1164.ALL;
 USE work.MAIN_ALU_Package.ALL;
 USE work.fiveBitMux2to1_Package.ALL;
 USE work.ALU_Control_Package.ALL;
@@ -13,7 +13,6 @@ USE work.PC_Package.ALL;
 USE work.WordAdder_Package.ALL;
 USE work.ALU_Add_Package.ALL;	  
 
-
 ENTITY MIPSProcessor IS
     PORT (
         clk : IN STD_LOGIC;
@@ -22,81 +21,53 @@ ENTITY MIPSProcessor IS
 END MIPSProcessor;
 
 ARCHITECTURE MIPSProcessor OF MIPSProcessor IS
-
     -- MIPSIntructionMemory signals
     SIGNAL Instruction : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    --*************************************************
-
     -- MIPSController signals
     SIGNAL RegDst, Jump, Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite : STD_LOGIC;
     SIGNAL ALUOp : STD_LOGIC_VECTOR(1 DOWNTO 0);
-    --*************************************************
-
     -- MIPSMUX_IM_REGS signals
     SIGNAL WriteRegister : STD_LOGIC_VECTOR(4 DOWNTO 0);
-    --*************************************************	 
-
     -- MIPSMUX_REGS_ALU signals
     SIGNAL MUX32_Out_ALU : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    --*************************************************	
-
     -- MIPSMUX_Dmem_Regs signals
     SIGNAL MUX32_Out_Dmem : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    --*************************************************	  
-
     -- MIPSMUX_ALUADD_PC signals
     SIGNAL MUX32_Out_ALUADD : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    --*************************************************
-
     -- MIPSSignExtend signals
     SIGNAL ToShiftLeftTwo : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    --*************************************************
-
     -- MIPSALUControl signals
     SIGNAL ALUControl : STD_LOGIC_VECTOR(3 DOWNTO 0);
-    --*************************************************	
-
-    --MIPSRegesters signals
+    -- MIPSRegisters signals
     SIGNAL Read_data1 : STD_LOGIC_VECTOR(31 DOWNTO 0);
     SIGNAL Read_data2 : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    --*************************************************	
-
-    --MIPSALU signals
+    -- MIPSALU signals
     SIGNAL ALUResult : STD_LOGIC_VECTOR(31 DOWNTO 0);
     SIGNAL ALUZeroFlag : STD_LOGIC;
-    --*************************************************
-
-    --MIPSDataMemory signals
+    -- MIPSDataMemory signals
     SIGNAL ReadData : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    --*************************************************
-    --MIPSPC signals
+    -- MIPSPC signals
     SIGNAL ReadAddress : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    --*************************************************	 
-
-    --MIPSAdder signals
+    -- MIPSAdder signals
     SIGNAL Adder_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    --*************************************************
-
-    --MIPSALUAdder signals
+    -- MIPSALUAdder signals
     SIGNAL ALU_Result : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    --*************************************************
-
-    --MIPSAND signal
+    -- MIPSAND signal
     SIGNAL AND_out : STD_LOGIC;
-    --*************************************************
-    --MIPSShiftLeftTwo 
-    signal FromShiftLeftTwo : STD_LOGIC_VECTOR(31 DOWNTO 0);
-    component ShiftLeftTwo is
-        Port (
-            input : in STD_LOGIC_VECTOR (31 downto 0);
-            output : out STD_LOGIC_VECTOR (31 downto 0)
-        );
-    end component;
-    --*************************************************
-BEGIN
-    -- Code Names are specified to avoid confusion, they can be
-    -- matched with the names in Scheme.pdf
+    -- MIPSShiftLeftTwo signals
+    SIGNAL FromShiftLeftTwo : STD_LOGIC_VECTOR(31 DOWNTO 0);
+    -- Jump signal
+    SIGNAL JumpAddress : STD_LOGIC_VECTOR(31 DOWNTO 0);
+    -- PCMux signal
+    SIGNAL PCMux_Out : STD_LOGIC_VECTOR(31 DOWNTO 0);
 
+    COMPONENT ShiftLeftTwo IS
+        PORT (
+            input : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+            output : OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+        );
+    END COMPONENT;
+BEGIN
     -- IM
     MIPSIntructionMemory : InstructionMemory PORT MAP(
         ReadAddress,
@@ -189,17 +160,14 @@ BEGIN
     MIPSPC : PC PORT MAP(
         clk, --clk
         reset, --reset
-        MUX32_Out_ALUADD, --Address_in 
+        PCMux_Out, --Address_in 
         ReadAddress --Address_out  
-
     );
 
     -- WORD-ADD
     MIPSWordAdder : WordAdder PORT MAP(
-
         ReadAddress, --Adder_in 
         Adder_out --Adder_out   
-
     );
 
     -- SLL2
@@ -210,11 +178,9 @@ BEGIN
 
     -- SLL2-ADD
     MIPSALUAdder : ALU_Adder PORT MAP(
-
         Adder_out, --ALU_ADD_IN1 
-        ToShiftLeftTwo, --ALU_ADD_IN2 
+        FromShiftLeftTwo, --ALU_ADD_IN2 
         ALU_Result --ALU_ADD_OUT
-
     );
 
     AND_out <= Branch AND ALUZeroFlag;
@@ -227,6 +193,14 @@ BEGIN
         AND_out
     );
 
-    
+    -- Jump Address Calculation
+    JumpAddress <= ReadAddress(31 DOWNTO 28) & Instruction(25 DOWNTO 0) & "00";
 
+    -- PC Mux to handle Jump
+    PCMux : ThirtyTwoBitMUX2to1 PORT MAP(
+        MUX32_Out_ALUADD,
+        JumpAddress,
+        PCMux_Out,
+        Jump
+    );
 END MIPSProcessor;
