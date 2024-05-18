@@ -20,18 +20,16 @@ architecture Behavioral of InstructionMemory is
         x"018b6825", -- or $t5, $t4, $t3
         x"8c090004", -- lw $t1, 4($zero) (load word)
         x"ac090004", -- sw $t1, 4($zero) (store word)
-        x"08100000",  -- j 0x000000 (jump to address 0)
         x"018b6825", -- or $t5, $t4, $t3
-        --x"1211fffb", -- beq $t1, $t0, -5
-        x"0149402a", -- slt $t2, $t1, $t0
+        x"018b6825", -- or $t5, $t4, $t3
         x"2109000A", -- addi $t1, $t0, 10 (initialization)
         x"012a4820", -- add $t1, $t1, $t2 (perform addition)
         x"012a4822", -- sub $t1, $t1, $t2 (perform subtraction)
         x"012a4824", -- and $t1, $t1, $t2 (perform AND)
         x"012a4825", -- or $t1, $t1, $t2 (perform OR)
-        x"0149502a", -- slt $t2, $t2, $t1 (perform set less than)
-        x"0149502a" -- slt $t2, $t2, $t1 (perform set less than)
-        --x"1009fffb", -- beq $zero, $t1, -5 (loop if $t1 == 0)
+        x"018b6825", -- or $t5, $t4, $t3
+        x"2109000A", -- addi $t1, $t0, 10 (initialization)
+        x"08100000"  -- j 00400000 (jump to address 0)
     );
 
 begin 

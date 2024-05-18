@@ -47,8 +47,8 @@ architecture Behavioral of Registers is
         x"aaaaaaaa", -- $k0
         x"bbbbbbbb", -- $k1
         x"10008000", -- $gp
-        x"7FFFF1EC", -- $sp
-        x"eeeeeeee", -- $fp
+        x"eeeeeeee", -- $sp
+        x"bbbbbbbb", -- $fp
         x"ffffffff"  -- $ra
     );
 begin

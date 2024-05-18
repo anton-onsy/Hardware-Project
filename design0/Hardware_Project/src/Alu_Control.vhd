@@ -14,8 +14,8 @@ begin
     process(ALUOp, funct)
     begin
         case ALUOp is
-            when "00" => -- LW or SW
-                operation <= "0010"; -- ADD operation (for address calculation)
+            when "00" => -- LW, SW, ADDI
+                operation <= "0010"; -- ADD operation (for address calculation and immediate addition)
             when "01" => -- BEQ
                 operation <= "0110"; -- SUBTRACT operation (for comparison)
             when "10" => -- R-type instructions
