@@ -17,10 +17,10 @@ architecture Behavioral of DataMemory is
     type RAM_16_x_32 is array(0 to 15) of std_logic_vector(31 downto 0);
 
     signal DM: RAM_16_x_32 := (
-        x"AAAAAAAA", x"AAAAAAAA", x"AAAAAAAA", x"AAAAAAAA",
-        x"AAAAAAAA", x"AAAAAAAA", x"AAAAAAAA", x"AAAAAAAA",
-        x"AAAAAAAA", x"AAAAAAAA", x"AAAAAAAA", x"AAAAAAAA",
-        x"AAAAAAAA", x"AAAAAAAA", x"AAAAAAAA", x"AAAAAAAA"
+        x"00000000", x"11111111", x"22222222", x"33333333",
+        x"44444444", x"55555555", x"66666666", x"77777777",
+        x"88888888", x"99999999", x"AAAAAAAA", x"BBBBBBBB",
+        x"CCCCCCCC", x"DDDDDDDD", x"EEEEEEEE", x"FFFFFFFF"
     );
 
     signal AddrIndex: integer;

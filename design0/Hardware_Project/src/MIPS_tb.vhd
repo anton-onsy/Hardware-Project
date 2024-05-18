@@ -49,7 +49,7 @@ BEGIN
     begin		
         -- hold reset state for 100 ns.
         reset <= '1';
-        wait for 100 ns;
+        wait for 7 ns;
         reset <= '0';
 
         -- wait for 500 ns to observe the behavior of the MIPS Processor
