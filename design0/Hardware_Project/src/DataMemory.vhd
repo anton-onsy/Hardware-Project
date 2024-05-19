@@ -3,10 +3,10 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity DataMemory is
-    port( 
+    port(
         clk : in STD_LOGIC;
         Address : in STD_LOGIC_VECTOR(31 downto 0);
-        WriteData : in STD_LOGIC_VECTOR(31 downto 0); 
+        WriteData : in STD_LOGIC_VECTOR(31 downto 0);
         MemRead : in STD_LOGIC;
         MemWrite : in STD_LOGIC;
         ReadData : out STD_LOGIC_VECTOR(31 downto 0)
@@ -23,33 +23,34 @@ architecture Behavioral of DataMemory is
         x"CCCCCCCC", x"DDDDDDDD", x"EEEEEEEE", x"FFFFFFFF"
     );
 
-    signal AddrIndex: integer;
-begin
-    process(Address)
-    begin
-        AddrIndex <= to_integer(unsigned(Address(31 downto 2))); -- Address in word offset
-    end process;
 
+
+begin
     process(clk)
-    begin 
+        variable AddrIndex: integer;
+    begin
         if rising_edge(clk) then
+            AddrIndex := to_integer(unsigned(Address(3 downto 0))); -- 4 LSBs for address range 0-15
             if MemWrite = '1' then
                 if AddrIndex >= 0 and AddrIndex < 16 then
                     DM(AddrIndex) <= WriteData;
                 else
-                    report("DataMemory:: WRITE ERR: Address out of range");
+                    report "DataMemory:: WRITE ERR: Address out of range";
                 end if;
             end if;
         end if;
     end process;
 
     process(Address, MemRead)
+        variable AddrIndex: integer;
     begin
+        AddrIndex := to_integer(unsigned(Address(3 downto 0))); -- 4 LSBs for address range 0-15
         if MemRead = '1' then
             if AddrIndex >= 0 and AddrIndex < 16 then
                 ReadData <= DM(AddrIndex);
+                
             else
-                report("DataMemory:: READ ERR: Address out of range");
+                report "DataMemory:: READ ERR: Address out of range";
                 ReadData <= (others => '0'); -- Default value for out of range
             end if;
         else

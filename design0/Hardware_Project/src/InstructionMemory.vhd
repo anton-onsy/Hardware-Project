@@ -18,8 +18,8 @@ architecture Behavioral of InstructionMemory is
         x"01285022", -- sub $t2, $t1, $t0
         x"01285024", -- and $t2, $t1, $t0
         x"018b6825", -- or $t5, $t4, $t3
-        x"8c090004", -- lw $t1, 4($zero) (load word)
-        x"ac090004", -- sw $t1, 4($zero) (store word)
+        x"8C090004", -- lw $t1, 4($zero) (load word)
+        x"Ac090004", -- sw $t1, 4($zero) (store word)
         x"018b6825", -- or $t5, $t4, $t3
         x"018b6825", -- or $t5, $t4, $t3
         x"2109000A", -- addi $t1, $t0, 10 (initialization)

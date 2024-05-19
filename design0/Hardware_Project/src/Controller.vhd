@@ -32,7 +32,7 @@ begin
 				ALUOp <= "10";
 				MemWrite <= '0';
 				ALUSrc <= '0';
-				RegWrite <= '1' after 10 ns;
+				RegWrite <= '1' ;
 				
 			when "100011" => -- load word (lw)
 				RegDst <= '0';
@@ -43,7 +43,7 @@ begin
 				ALUOp <= "00";
 				MemWrite <= '0';
 				ALUSrc <= '1';
-				RegWrite <= '1' after 10 ns;
+				RegWrite <= '1' ;
 				
 			when "101011" => -- store word (sw)
 				RegDst <= 'X';
@@ -59,7 +59,7 @@ begin
 			when "000100" => -- Branch Equal (beq)
 				RegDst <= 'X';
 				Jump <= '0';
-				Branch <= '1' after 2 ns;
+				Branch <= '1' ;
 				MemRead <= '0';
 				MemToReg <= 'X'; 
 				ALUOp <= "01";
@@ -87,7 +87,7 @@ begin
 				ALUOp <= "00"; -- ALU will perform addition
 				MemWrite <= '0';
 				ALUSrc <= '1';
-				RegWrite <= '1' after 10 ns;
+				RegWrite <= '1' ;
 				
 			when others => -- Default case for other instructions
 				RegDst <= '0';
